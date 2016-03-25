@@ -12,7 +12,7 @@ def output_digest(recipients, keywords):
         recipients
     )
 
-    page = papers.Page.FromLink("astro-ph")
+    page = papers.Page("astro-ph")
 
     article_list = page.get_interesting(keywords)
 
